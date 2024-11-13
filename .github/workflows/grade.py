@@ -77,7 +77,7 @@ def main():
                     date = dt2.strptime(date.group(0), "%Y-%m-%dT%H:%M:%S")
                     if COMMIT_TIME > date:
                         continue
-        print(f'TASK: {task}')
+        print(f'TASK: {task}', flush=True)
         if len(prof_files) != 1:
             print('ERROR: invalid number of grader files (warn your professor)')
             continue
